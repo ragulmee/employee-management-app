@@ -1,7 +1,8 @@
-﻿import { useEffect, useState } from "react";
+﻿import AsyncStorage from "@react-native-async-storage/async-storage";
 import { DarkTheme, Slot, ThemeProvider } from 'expo-router';
+import { useEffect, useState } from "react";
 import { Platform } from "react-native";
-import AsyncStorage from "@react-native-async-storage/async-storage";
+import 'react-native-url-polyfill/auto';
 import AppSplashScreen from "../components/AppSplashScreen";
 import LoginScreen from "../components/LoginScreen";
 import { requestNotificationPermission, sendTestNotification } from "../utils/notifications";
